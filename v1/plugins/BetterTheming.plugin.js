@@ -9,6 +9,7 @@ BetterTheming.prototype.start = function() {
 };
 BetterTheming.prototype.stop = function() {
   clearInterval(themeInterval);
+  document.querySelector("#app-mount").classList.remove("windowed", "minimized", "maximized", "theme-dark", "theme-light", "focused", "unfocused");
 };
 BetterTheming.prototype.update = function() {};
 BetterTheming.prototype.getName = function() { return "BetterTheming" };
