@@ -231,7 +231,7 @@
 /*text color*/
 
 /*background removal*/
-.title-qAcLxz, .headerBar-UHpsPw, .header-2o-2hj, .embed, .inner-zqa7da, .divider-2PMBlV,
+.title-3qD0b-, .headerBar-UHpsPw, .header-2o-2hj, .embed, .inner-zqa7da, .divider-2PMBlV,
 #friends .tab-bar-separator, #friends .friends-table .friend-table-add-wrapper .friend-table-add-header,
 code, #friends .tab-bar .tab-bar-item .tab-bar-item-primary, .search-results-wrap .search-result:after,
 .search-results-wrap .search-result:before, .search-results-wrap .search-header, .topSectionPlaying-1J5E4n,
@@ -257,7 +257,7 @@ code, #friends .tab-bar .tab-bar-item .tab-bar-item-primary, .search-results-wra
 }
 
 /*box shadow removal*/
-.title-qAcLxz, .headerBar-UHpsPw, .header-2o-2hj, .private-channels .search-bar, .unreadBar-17qm9c,
+.title-3qD0b-, .headerBar-UHpsPw, .header-2o-2hj, .private-channels .search-bar, .unreadBar-17qm9c,
 .unread-mentions-indicator-bottom .unread-mentions-bar, .unread-mentions-indicator-top .unread-mentions-bar,
 .search-results-wrap .search-header, .search-results-wrap .search-result .hit, .chat form, .userPopout-4pfA0d,
 .modal-3HD5ck, .footer-2yfCgX {
@@ -266,10 +266,10 @@ code, #friends .tab-bar .tab-bar-item .tab-bar-item-primary, .search-results-wra
 }
 
 /*outset background*/
-#app-mount, .title-qAcLxz, .headerBar-UHpsPw, .private-channels, .container-2Thooq, #friends, .friends-table,
+#app-mount, .title-3qD0b-, .headerBar-UHpsPw, .private-channels, .container-2Thooq, #friends, .friends-table,
 .container-PNkimc, .chat > .content, .chat form, .typing, .messages-wrapper, .ui-standard-sidebar-view .sidebar-region,
 .ui-standard-sidebar-view .content-region, .headerNormal-1cioxU, .body-3rkFrF, .footer-2J5zqP,
-.guilds-wrapper .guilds, .search-results-wrap, .topSectionNormal-2LlRG1, .container-1UB9sr {
+.guilds-wrapper .guilds, .search-results-wrap, .topSectionNormal-2LlRG1, .container-1UB9sr, .container-2lgZY8, .guilds-wrapper {
   background-color: var(--outset-color)!important;
 }
 
@@ -346,7 +346,7 @@ button.button-2b6hmh:active {
 }
 
 /*horizontal line*/
-.title-qAcLxz, .chat > .title-wrap, .header-2o-2hj, .guilds-wrapper .guild-separator:after,
+.title-3qD0b-, .chat > .title-wrap, .header-2o-2hj, .guilds-wrapper .guild-separator:after,
 .private-channels .search-bar, .footer-2J5zqP:before, .userInfoSection-2acyCx:nth-child(1),
 .container-1UB9sr {
   border-bottom: 2px solid;
