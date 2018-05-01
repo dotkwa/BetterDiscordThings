@@ -267,9 +267,10 @@ code, #friends .tab-bar .tab-bar-item .tab-bar-item-primary, .search-results-wra
 
 /*outset background*/
 #app-mount, .title-3qD0b-, .headerBar-UHpsPw, .private-channels, .container-2Thooq, #friends, .friends-table,
-.container-PNkimc, .chat > .content, .chat form, .typing, .messages-wrapper, .ui-standard-sidebar-view .sidebar-region,
+.container-PNkimc, .chat > .content, .chat form, .typing-2GQL18, .messages-wrapper, .ui-standard-sidebar-view .sidebar-region,
 .ui-standard-sidebar-view .content-region, .headerNormal-1cioxU, .body-3rkFrF, .footer-2J5zqP,
-.guilds-wrapper .guilds, .search-results-wrap, .topSectionNormal-2LlRG1, .container-1UB9sr, .container-2lgZY8, .guilds-wrapper {
+.guilds-wrapper .guilds, .search-results-wrap, .topSectionNormal-2LlRG1, .container-1UB9sr, .container-2lgZY8, .guilds-wrapper,
+.container-16j22k {
   background-color: var(--outset-color)!important;
 }
 
@@ -355,7 +356,7 @@ button.button-2b6hmh:active {
 }
 
 /*vertical line*/
-.attachButtonDivider-3Glu60, .chat > .title-wrap > .topic.topic-expandable:before, .header-toolbar .separator,
+.attachButtonDivider-3Glu60, .chat > .title-wrap > .topic-2QX7LI:before, .header-toolbar .separator,
 #friends .friends-table .friends-table-header .friends-column-separator, .divider-2PMBlV {
   border-left: 2px solid;
   -webkit-border-image: var(--line);
