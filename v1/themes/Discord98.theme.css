@@ -48,6 +48,7 @@
     --dark-tab-inactive: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAW0lEQVQY02P8//8/w/Ql6/4zYAGZMUGMDAwMDIzTFq/9D+OgAx5e/v9fPn9kxKtISV3nf2ltE4ZJyNYyKqnr/H/17DENFWG4Ca5oyYJ52NQwPH/8gAGuiIEAAAB48UaCyquzDwAAAABJRU5ErkJggg==') 3 repeat;
     --dark-text-color: #BAC5CF;
     --dark-highlight-color: #DEB12C;
+    --dark-selected-text-color: white;
     --dark-selected-color: #567089;
     --dark-disabled-color: #C6C6C7;
     --dark-scrollup: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAA2SURBVChTY7Ry9v7PQAJggtJEgwHS0NU9AcrCBBgaYIpxaULRgK4Imya4BlwmoosP/XhgYAAAYIwPKO1JEhgAAAAASUVORK5CYII=');
@@ -79,6 +80,7 @@
     --text-color: var(--dark-text-color);
     --highlight-color: var(--dark-highlight-color);
     --faded-highlight-color: var(--dark-faded-highlight-color);
+    --selected-text-color: var(--dark-selected-text-color);
     --selected-color: var(--dark-selected-color);
     --disabled-color: var(--dark-disabled-color);
     --scrollup: var(--dark-scrollup);
@@ -110,6 +112,7 @@
     --text-color: var(--light-text-color);
     --highlight-color: var(--light-highlight-color);
     --faded-highlight-color: var(--light-faded-highlight-color);
+    --selected-text-color: var(--light-selected-text-color);
     --selected-color: var(--light-selected-color);
     --disabled-color: var(--light-disabled-color);
     --scrollup: var(--light-scrollup);
@@ -234,9 +237,9 @@
 code, #friends .tab-bar .tab-bar-item .tab-bar-item-primary, .search-results-wrap .search-result:after,
 .search-results-wrap .search-result:before, .search-results-wrap .search-header, .topSectionPlaying-1J5E4n,
 .headerFill-adLl4x, .footer-2yfCgX, .contentHoveredText-2D9B-x, .contentHoveredVoice-3p_NEO:active,
-.contentSelectedVoice-1WDIBM:active {
+.contentSelectedVoice-1WDIBM:active, .private-channels .channel:hover a, .private-channels .channel.btn-friends:hover a {
   background: none!important;
-  background-color: none;
+  background-color: transparent;
   background-image: none;
 }
 
@@ -599,15 +602,14 @@ div.button-2b6hmh {
 /*text*/
 .friends-online, .name-3YKhmS, .topic-2QX7LI, .nameDefaultText-24KCy5, .nameDefaultVoice-3WUH7s,
 .nameHoveredText-1uO31y, .nameHoveredVoice-YJ1Vfd, .nameLockedText-3pqQcL, .nameLockedVoice-26MhB1,
-.nameMutedText-3Vj4bM, .nameMutedVoice-3oxyQZ, .nameSelectedText-sp_EUw, .nameSelectedVoice-1qSph5,
-.nameUnreadText-DfkrI4, .nameUnreadVoice-EVo-wI, .message-group .comment .markup, #friends .tab-bar .tab-bar-item,
-#friends .tab-bar .tab-bar-item.tab-bar-item-primary, .private-channels .channel .channel-name, .colorDefaultText-oas-QM,
-.colorDefaultVoice-3wYlhb, .colorHoveredText-OZnAgu, .colorHoveredVoice-1kucsK, .colorLockedText-1VRkPt,
-.colorLockedVoice-2UlBjl, .colorSelectedText-1y4Wvs, .colorSelectedVoice-Xcb_9R, .colorUnreadText-2t7XRb,
+.nameMutedText-3Vj4bM, .nameMutedVoice-3oxyQZ, .nameUnreadText-DfkrI4, .nameUnreadVoice-EVo-wI,
+.message-group .comment .markup, #friends .tab-bar .tab-bar-item, #friends .tab-bar .tab-bar-item.tab-bar-item-primary,
+.private-channels .channel .channel-name, .colorDefaultText-oas-QM, .colorDefaultVoice-3wYlhb, .colorHoveredText-OZnAgu,
+.colorHoveredVoice-1kucsK, .colorLockedText-1VRkPt, .colorLockedVoice-2UlBjl, .colorUnreadText-2t7XRb,
 .colorUnreadVoice-137o4S, .reaction .reaction-count, .lookFilled-1Gx00P .contents-18-Yxp,
 .lookInverted-2D7oAl .contents-18-Yxp, .lookLink-9FtZy- .contents-18-Yxp, .lookOutlined-3sRXeN .contents-18-Yxp,
 .search-bar input::-webkit-input-placeholder, .input-2VB9rf, #friends .tab-bar .tab-bar-item.selected,
-.accountDetails-3k9g4n, .textArea-2Spzkt {
+.accountDetails-3k9g4n, .textArea-2Spzkt, .private-channels .channel .channel-activity {
   color: var(--text-color)!important;
 }
 
@@ -629,9 +631,16 @@ div.button-2b6hmh {
 }
 
 /*selected*/
-.contentSelectedText-3wUhMi, .guilds-wrapper .guilds .guild.selected:before, .private-channels .channel.selected a {
+.contentSelectedText-3wUhMi, .guilds-wrapper .guilds .guild.selected:before, .private-channels .channel.selected a,
+.private-channels .channel.btn-friends.selected:hover a {
   background: var(--selected-color)!important;
   background-color: var(--selected-color)!important;
+}
+
+/*selected text*/
+.nameSelectedText-sp_EUw, .nameSelectedVoice-1qSph5, .colorSelectedText-1y4Wvs, .colorSelectedVoice-Xcb_9R,
+.private-channels .channel.selected.private .channel-name, .private-channels .channel.btn-friends.selected .channel-name {
+  color: var(--selected-text-color)!important;
 }
 
 /*disabled*/
