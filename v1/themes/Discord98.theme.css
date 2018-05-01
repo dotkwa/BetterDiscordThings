@@ -228,14 +228,13 @@
   background-size: 16px 16px;
 }
 
-/*text color*/
-
 /*background removal*/
 .title-3qD0b-, .headerBar-UHpsPw, .header-2o-2hj, .embed, .inner-zqa7da, .divider-2PMBlV,
 #friends .tab-bar-separator, #friends .friends-table .friend-table-add-wrapper .friend-table-add-header,
 code, #friends .tab-bar .tab-bar-item .tab-bar-item-primary, .search-results-wrap .search-result:after,
 .search-results-wrap .search-result:before, .search-results-wrap .search-header, .topSectionPlaying-1J5E4n,
-.headerFill-adLl4x, .footer-2yfCgX {
+.headerFill-adLl4x, .footer-2yfCgX, .contentHoveredText-2D9B-x, .contentHoveredVoice-3p_NEO:active,
+.contentSelectedVoice-1WDIBM:active {
   background: none!important;
   background-color: none;
   background-image: none;
@@ -252,7 +251,8 @@ code, #friends .tab-bar .tab-bar-item .tab-bar-item-primary, .search-results-wra
 .base-3dtUhz, .userPopout-4pfA0d, .quickMessage-28pD5Y, .embed, .embed-color-pill,
 #friends .friends-header .tab-bar .tab-bar-item, .add-friend-input-wrapper, .message-group .comment .markup pre,
 .search .search-bar, .search-results-wrap .search-result .search-result-message.hit, .content-20Aix8,
-.private-channels .channel a, .notice, .button-2b6hmh, .root-SR8cQa, .connectedAccount-36nQx7  {
+.private-channels .channel a, .notice, .button-2b6hmh, .root-SR8cQa, .connectedAccount-36nQx7, .input-2VB9rf,
+.quickswitcher-3JagVE  {
   border-radius: 0px!important;
 }
 
@@ -260,7 +260,7 @@ code, #friends .tab-bar .tab-bar-item .tab-bar-item-primary, .search-results-wra
 .title-3qD0b-, .headerBar-UHpsPw, .header-2o-2hj, .private-channels .search-bar, .unreadBar-17qm9c,
 .unread-mentions-indicator-bottom .unread-mentions-bar, .unread-mentions-indicator-top .unread-mentions-bar,
 .search-results-wrap .search-header, .search-results-wrap .search-result .hit, .chat form, .userPopout-4pfA0d,
-.modal-3HD5ck, .footer-2yfCgX {
+.modal-3HD5ck, .footer-2yfCgX, .input-2VB9rf {
   -webkit-box-shadow: none!important;
   box-shadow: none!important;
 }
@@ -270,7 +270,7 @@ code, #friends .tab-bar .tab-bar-item .tab-bar-item-primary, .search-results-wra
 .container-PNkimc, .chat > .content, .chat form, .typing-2GQL18, .messages-wrapper, .ui-standard-sidebar-view .sidebar-region,
 .ui-standard-sidebar-view .content-region, .headerNormal-1cioxU, .body-3rkFrF, .footer-2J5zqP,
 .guilds-wrapper .guilds, .search-results-wrap, .topSectionNormal-2LlRG1, .container-1UB9sr, .container-2lgZY8, .guilds-wrapper,
-.container-16j22k {
+.container-16j22k, .quickswitcher-3JagVE {
   background-color: var(--outset-color)!important;
 }
 
@@ -282,7 +282,7 @@ code, #friends .tab-bar .tab-bar-item .tab-bar-item-primary, .search-results-wra
 /*big forms*/
 .chat .messages, #friends .friends-table .scroller-wrap, .scroller-2FKFPG, .channel-members-loading,
 .search-bar .search-bar-inner, .quickMessage-28pD5Y, .textArea-2Spzkt, .add-friend-input-wrapper,
-.search .search-bar {  
+.search .search-bar, .input-2VB9rf {  
   background-color: var(--form-color)!important;
   border: 2px solid;
   -webkit-border-image: var(--form);
@@ -300,7 +300,7 @@ code, #friends .tab-bar .tab-bar-item .tab-bar-item-primary, .search-results-wra
 /*big outset*/
 #friends .friends-table, .popout, .search-results-wrap .scrollerWrap-2lJEkd,
 .guilds-wrapper .guilds .guild, .guilds-wrapper .guilds-add, .winButton-iRh8-Z, .button-2b6hmh,
-.modal-3HD5ck, .close-18n9bP, .body-3ND3kc, .root-SR8cQa, .button-38aScr {
+.modal-3HD5ck, .close-18n9bP, .body-3ND3kc, .root-SR8cQa, .button-38aScr, .quickswitcher-3JagVE {
   background-color: var(--outset-color)!important;
   border: 2px solid;
   -webkit-border-image: var(--outset);
@@ -596,7 +596,25 @@ div.button-2b6hmh {
   opacity: 1; 
 }
 
-/*text*/  
+/*text*/
+.friends-online, .name-3YKhmS, .topic-2QX7LI, .nameDefaultText-24KCy5, .nameDefaultVoice-3WUH7s,
+.nameHoveredText-1uO31y, .nameHoveredVoice-YJ1Vfd, .nameLockedText-3pqQcL, .nameLockedVoice-26MhB1,
+.nameMutedText-3Vj4bM, .nameMutedVoice-3oxyQZ, .nameSelectedText-sp_EUw, .nameSelectedVoice-1qSph5,
+.nameUnreadText-DfkrI4, .nameUnreadVoice-EVo-wI, .message-group .comment .markup, #friends .tab-bar .tab-bar-item,
+#friends .tab-bar .tab-bar-item.tab-bar-item-primary, .private-channels .channel .channel-name, .colorDefaultText-oas-QM,
+.colorDefaultVoice-3wYlhb, .colorHoveredText-OZnAgu, .colorHoveredVoice-1kucsK, .colorLockedText-1VRkPt,
+.colorLockedVoice-2UlBjl, .colorSelectedText-1y4Wvs, .colorSelectedVoice-Xcb_9R, .colorUnreadText-2t7XRb,
+.colorUnreadVoice-137o4S, .reaction .reaction-count, .lookFilled-1Gx00P .contents-18-Yxp,
+.lookInverted-2D7oAl .contents-18-Yxp, .lookLink-9FtZy- .contents-18-Yxp, .lookOutlined-3sRXeN .contents-18-Yxp,
+.search-bar input::-webkit-input-placeholder, .input-2VB9rf, #friends .tab-bar .tab-bar-item.selected,
+.accountDetails-3k9g4n, .textArea-2Spzkt {
+  color: var(--text-color)!important;
+}
+
+/*graphic colors*/
+.button-1w5pas g path:nth-child(2), g path:nth-child(3) {
+  stroke: var(--text-color);
+}
 
 /*highlighted*/
 .unread-1Dp-OI, .guilds-wrapper .guilds .guild.unread:before, .contentUnreadText-3oxASB, .contentUnreadVoice-1vHNNW {
@@ -605,7 +623,7 @@ div.button-2b6hmh {
 }
 
 .contentUnreadText-3oxASB, .contentUnreadVoice-1vHNNW, .guilds-wrapper .guilds .guild:not(.selected).unread,
-.activity-1ythUs {
+.activity-1ythUs, .contentUnreadText-2vNnZc, .nameUnreadVoice-EVo-wI {
   background: rgba(250,166,26,.2)!important;
   background-color: rgba(250,166,26,.2)!important;
 }
