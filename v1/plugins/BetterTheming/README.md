@@ -16,5 +16,5 @@ To make use BetterTheming as a theme developer, all you need to do is to call th
   background-position: 1px 0;
 }
 ``` 
-This example from the Discord98 theme shows the maximize button switching to a different image when the window is either '.maximized' or '.windowed'.
+This example from the Discord98 theme shows the maximize button switching to a different image when the window is either '.maximized' or '.windowed'.  
 ![Example Image](https://github.com/dotkwa/BetterDiscordThings/raw/master/v1/plugins/BetterTheming/example.png "Example Image")
