@@ -17,3 +17,4 @@ To make use BetterTheming as a theme developer, all you need to do is to call th
 }
 ``` 
 This example from the Discord98 theme shows the maximize button switching to a different image when the window is either '.maximized' or '.windowed'.
+(example.png "example image")
