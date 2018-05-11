@@ -144,8 +144,7 @@
 /*====Extra styling for mini themes/plugins====*/
 /*---------------------------------------------*/
 
-/*HorizontalServerlist - by square#3880*/
-
+/*HorizontalServerlist - by square*/
 :root {
   --height-titlebar: 18px;
 }
@@ -158,7 +157,58 @@
   top: calc(50% - 30px);
 }
 */
-  /*------------------*/
+
+/*PermissionsViewer - by Zerebos*/
+.member-perms {
+  display: block;
+}
+
+.member-perms::-webkit-scrollbar-thumb, .member-perms::-webkit-scrollbar-track,
+#permissions-modal-wrapper *::-webkit-scrollbar-thumb, #permissions-modal-wrapper *::-webkit-scrollbar-track {
+  visibility: visible;
+}
+
+/*CustomMediaSupport - by Orrielel*/
+.orrie-tooltip_text {
+  background-color: var(--tooltip-color)!important;
+  border: 1px solid;
+  border-color: black;
+  color: black;
+  transition: none;
+}
+
+.orrie-tooltip_text.orrie-tooltip_top:after {
+  top: 90%;
+  content: "▼";
+  border: none;
+  text-shadow: 0 1px 0 black, 0 1px 0 black, 0 1px 0 black, 0 -1px 1px var(--tooltip-color);
+  color: var(--tooltip-color)!important;
+}
+
+.orrie-tooltip_text.orrie-tooltip_left:after {
+  left: 98%;
+  content: "▶";
+  border: none;
+  text-shadow: 1px 0 0 black, 1px 0 0 black, 1px 0 0 black, -1px 0 1px var(--tooltip-color);
+  color: var(--tooltip-color)!important;
+}
+
+.orrie-tooltip_text.orrie-tooltip_bottom:after {
+  top: -11px;
+  content: "▲";
+  border: none;
+  text-shadow: 0 -1px 0 black, 0 -1px 0 black, 0 -1px 0 black, 0 1px 1px var(--tooltip-color);
+  color: var(--tooltip-color)!important;
+}
+
+.orrie-tooltip_text.orrie-tooltip_right:after {
+  left: -9px;
+  content: "◀";
+  border: none;
+  text-shadow: -1px 0 0 black, -1px 0 0 black, -1px 0 0 black, 1px 0 1px var(--tooltip-color);
+  color: var(--tooltip-color)!important;
+}
+/*------------------*/
 /*====Main theme====*/
 /*------------------*/
 
@@ -276,7 +326,8 @@ code, #friends .tab-bar .tab-bar-item .tab-bar-item-primary, .search-results-wra
 .headerFill-adLl4x, .footer-2yfCgX, .contentHoveredText-2D9B-x, .contentHoveredVoice-3p_NEO:active,
 .contentSelectedVoice-1WDIBM:active, .private-channels .channel:hover a, .private-channels .channel.btn-friends:hover a,
 .topSectionNormal-2-vo2m, .messagesPopout-24nkyi .message-group:hover .actionButtons-1sUUug, .small-popout-box,
-.themedPopout-25DgLi, .menu-Sp6bN1, .searchPopout-1vUlP3, .option-96V44q:after {
+.themedPopout-25DgLi, .searchPopout-1vUlP3, .option-96V44q:after, .headerNormal-T_seeN, .body-3iLsc4,
+.footer-1fjuF6 {
   background: none!important;
   background-color: transparent;
   background-image: none;
@@ -296,7 +347,8 @@ code, #friends .tab-bar .tab-bar-item .tab-bar-item-primary, .search-results-wra
 .private-channels .channel a, .notice, .button-2b6hmh, .root-SR8cQa, .connectedAccount-36nQx7, .input-2VB9rf,
 .quickswitcher-3JagVE, .contextMenu-HLZMGh, .item-1Yvehc, .checkbox .checkbox-inner span, .themedPopout-25DgLi,
 .messagesPopout-24nkyi .message-group, .actionButtons-1sUUug .jumpButton-3DTcS_, .popout-3sVMXz, .small-popout-box,
-.menu-Sp6bN1, .searchPopout-1vUlP3, .option-96V44q  {
+.menu-Sp6bN1, .searchPopout-1vUlP3, .option-96V44q, .userPopout-3XzG_A, .quickMessage-2XpSaN, .role-2irmRk,
+.member-perms .member-perm, .note-3kmerW textarea {
   border-radius: 0px!important;
 }
 
@@ -311,23 +363,25 @@ code, #friends .tab-bar .tab-bar-item .tab-bar-item-primary, .search-results-wra
 }
 
 /*outset background*/
-#app-mount, .title-3qD0b-, .headerBar-UHpsPw, .private-channels, .container-2Thooq, #friends, .friends-table,
+#app-mount, .title-3qD0b-, .headerBar-UHpsPw, .private-channels, .container-2Thooq, #friends,
 .container-PNkimc, .chat > .content, .chat form, .typing-2GQL18, .messages-wrapper, .ui-standard-sidebar-view .sidebar-region,
 .ui-standard-sidebar-view .content-region, .headerNormal-1cioxU, .body-3rkFrF, .footer-2J5zqP,
 .guilds-wrapper .guilds, .search-results-wrap, .topSectionNormal-2LlRG1, .container-1UB9sr, .container-2lgZY8, .guilds-wrapper,
-.container-16j22k, .quickswitcher-3JagVE, .itemSubMenu-1vN_Yn {
+.container-16j22k, .item-1Yvehc {
   background-color: var(--outset-color)!important;
 }
 
 /*form background*/
-.channel-members, .search-results-wrap .channel-separator .channel-name {
+.channel-members, .search-results-wrap .channel-separator .channel-name,
+.contextMenu-HLZMGh .contextMenu-HLZMGh .scroller-2PSBSf .item-1Yvehc {
   background-color: var(--form-color)!important;
 }
 
 /*big forms*/
 .chat .messages, #friends .friends-table .scroller-wrap, .scroller-2FKFPG, .channel-members-loading,
 .search-bar .search-bar-inner, .quickMessage-28pD5Y, .textArea-2Spzkt, .add-friend-input-wrapper,
-.search .search-bar, .input-2VB9rf, .checkbox .checkbox-inner span, .themedPopout-25DgLi .scroller-wrap {  
+.search .search-bar, .input-2VB9rf, .checkbox .checkbox-inner span, .themedPopout-25DgLi .scroller-wrap,
+.quickMessage-2XpSaN, .note-3kmerW textarea {  
   background-color: var(--form-color)!important;
   border: 2px solid;
   -webkit-border-image: var(--form);
@@ -347,7 +401,7 @@ code, #friends .tab-bar .tab-bar-item .tab-bar-item-primary, .search-results-wra
 .guilds-wrapper .guilds .guild, .guilds-wrapper .guilds-add, .winButton-iRh8-Z, .button-2b6hmh,
 .modal-3HD5ck, .close-18n9bP, .body-3ND3kc, .root-SR8cQa, .button-38aScr, .quickswitcher-3JagVE,
 .contextMenu-HLZMGh, .messagesPopout-24nkyi .message-group, .messagesPopout-24nkyi .message-group:last-of-type,
-.actionButtons-1sUUug .jumpButton-3DTcS_, .popout-3sVMXz {
+.actionButtons-1sUUug .jumpButton-3DTcS_, .userPopout-3XzG_A, .searchPopout-1vUlP3, .themedPopout-25DgLi, .menu-Sp6bN1 {
   background-color: var(--outset-color)!important;
   border: 2px solid;
   -webkit-border-image: var(--outset);
@@ -355,7 +409,8 @@ code, #friends .tab-bar .tab-bar-item .tab-bar-item-primary, .search-results-wra
 }
 
 /*small outset*/
-.search-results-wrap .search-result .search-result-message.hit, .connectedAccount-36nQx7, .activity-1ythUs {
+.search-results-wrap .search-result .search-result-message.hit, .connectedAccount-36nQx7, .activity-1ythUs, .role-2irmRk,
+.member-perms .member-perm {
   background-color: var(--outset-color);
   border: 1px solid!important;
   -webkit-border-image: var(--outset);
@@ -418,7 +473,7 @@ button.button-2b6hmh:active {
 .itemGroup-1tL0uz:not(:empty)~.itemGroup-1tL0uz:empty+.itemGroup-1tL0uz:not(:empty),
 .itemGroup-1tL0uz:not(:first-child):not(:empty), .resultsGroup-r_nuzN:not(:first-child):before {
   border-top: 2px solid;
-  -webkit-border-image: var(--line)!important;
+  -webkit-border-image: var(--line);
   border-image: var(--line);
 }
 
@@ -458,6 +513,10 @@ button.button-2b6hmh:active {
 .scrollerFade-28dRsO .scroller-2FKFPG::-webkit-scrollbar-thumb, .scrollerFade-28dRsO .scroller-2FKFPG::-webkit-scrollbar-track,
 .scrollerFade-1Ijw5y .scroller-2FKFPG::-webkit-scrollbar-thumb, .scrollerFade-1Ijw5y .scroller-2FKFPG::-webkit-scrollbar-track {
   visibility: visible!important;
+}
+
+.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller, .ui-standard-sidebar-view .content-region-scroller {
+  display: -webkit-box;
 }
 
 .guilds-wrapper .guilds::-webkit-scrollbar {
@@ -549,7 +608,7 @@ button.button-2b6hmh:active {
 }
 
 .jump-to-present-bar, .jump-to-present-bar:active {
-  margin-bottom: 7px;
+  margin-bottom: 7px!important;
 }
 
 .header-2o-2hj {
@@ -682,7 +741,10 @@ div.button-2b6hmh {
 #friends .friends-table .friends-table-header .friends-column, .discriminator-xUhQkU,
 .actionButtons-1sUUug .jumpButton-3DTcS_, .option-popout .btn-item, .private-channels header,
 .item-1GzJrl, .private-channels .channel .link-button-icon g, .resultsGroup-r_nuzN .header-2N-gMV,
-.searchOption-zQ-1l6 .filter-3Y_im-, .option-96V44q:not(.searchOption-zQ-1l6) .answer-1n6g43, .option-96V44q .nonText-3CRkO0 {
+.searchOption-zQ-1l6 .filter-3Y_im-, .option-96V44q:not(.searchOption-zQ-1l6) .answer-1n6g43, .option-96V44q .nonText-3CRkO0,
+.body-3iLsc4, .primary-jw0I4K, .note-3kmerW textarea, .activityProfile-2bJRaP .headerText-1HLrL7,
+.activityUserPopout-2yItg2 .headerText-1HLrL7, .tab-bar.tabBar-2MuP6- .tabBarItem-1b8RUP, .tab-bar.TOP .tab-bar-item.selected,
+.content-3JfFJh {
   color: var(--text-color)!important;
 }
 
@@ -706,7 +768,7 @@ div.button-2b6hmh {
 /*selected*/
 .contentSelectedText-3wUhMi, .guilds-wrapper .guilds .guild.selected:before, .private-channels .channel.selected a,
 .private-channels .channel.btn-friends.selected:hover a, .item-1Yvehc:hover, .option-popout .btn-item:hover,
-.item-1GzJrl:hover, .option-96V44q.selected-rZcOL- {
+.item-1GzJrl:hover, .option-96V44q.selected-rZcOL-, .contextMenu-HLZMGh .contextMenu-HLZMGh .scroller-2PSBSf .item-1Yvehc:hover {
   background: var(--selected-color)!important;  
   background-color: var(--selected-color)!important;
 }
@@ -716,7 +778,7 @@ div.button-2b6hmh {
 .private-channels .channel.selected.private .channel-name, .private-channels .channel.btn-friends.selected .channel-name,
 .item-1Yvehc:hover, .option-popout .btn-item:hover, .private-channels .channel.selected .link-button-icon g,
 .option-96V44q.selected-rZcOL- .filter-3Y_im-, .option-96V44q.selected-rZcOL- .answer-1n6g43,
-.option-96V44q.selected-rZcOL- .nonText-3CRkO0 {
+.option-96V44q.selected-rZcOL- .nonText-3CRkO0, .item-1GzJrl:hover  .label-1Y-LW5 {
   color: var(--selected-text-color)!important;
 }
 
@@ -747,7 +809,7 @@ div.button-2b6hmh {
 }
 
 .tooltip.tooltip-top:after {
-  top: 28px;
+  top: 90%;
   content: "▼";
   border: none;
   text-shadow: 0 1px 0 black, 0 1px 0 black, 0 1px 0 black, 0 -1px 1px var(--tooltip-color);
@@ -755,8 +817,7 @@ div.button-2b6hmh {
 }
 
 .tooltip.tooltip-left:after {
-  left: 99%;
-  right: 1px;
+  left: 98%;
   content: "▶";
   border: none;
   text-shadow: 1px 0 0 black, 1px 0 0 black, 1px 0 0 black, -1px 0 1px var(--tooltip-color);
@@ -764,7 +825,7 @@ div.button-2b6hmh {
 }
 
 .tooltip.tooltip-bottom:after {
-  top: -13px;
+  top: -11px;
   content: "▲";
   border: none;
   text-shadow: 0 -1px 0 black, 0 -1px 0 black, 0 -1px 0 black, 0 1px 1px var(--tooltip-color);
@@ -772,7 +833,7 @@ div.button-2b6hmh {
 }
 
 .tooltip.tooltip-right:after {
-  left: -13px;
+  left: -9px;
   content: "◀";
   border: none;
   text-shadow: -1px 0 0 black, -1px 0 0 black, -1px 0 0 black, 1px 0 1px var(--tooltip-color);
