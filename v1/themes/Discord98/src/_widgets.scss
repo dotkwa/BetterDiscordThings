@@ -1,0 +1,43 @@
+//----LIGHT VARIABLES----//
+$light-appborder: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAPElEQVQI12O8f+fafwY00NTazcB4/861/wrKmnDBnp4ehmvXrpErsWb9VhQ7rl27xsCYmJiIYTkDAwMDALltJ9P6Wi0iAAAAAElFTkSuQmCC') 2 repeat;
+$light-close-button: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAARElEQVQY02O8f+fafwYCgPH+nWv/FVW0GBgYGBju37mGIgkTZ4SZhK4Qmc+IbB1MAgZgGhjR3YTNatJMIugmon2HDwAAhXk7+HSeZCcAAAAASUVORK5CYII=') no-repeat 2px 2px;
+$light-maximize-button: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAIUlEQVQY02NkYGD4z0AAMBKt6P6dazgVKKpoDXFFhIIAAF+YGwEvkwPlAAAAAElFTkSuQmCC') no-repeat 2px 2px;
+$light-unmaximize-button: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAP0lEQVQY02O8f+fafwYGBgZFFS0GbOD+nWsMjCQrun/nGooCmBgjAwPDf1wmkK4ImzUobsKlCFmMeEW43AQDACPgOxpaVpZqAAAAAElFTkSuQmCC') no-repeat 2px 2px;
+$light-minimize-button: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAH0lEQVQY02O8f+fafwYCgHH4K1JU0cIqef/ONeIVAQCQyiYaiDtkvwAAAABJRU5ErkJggg==') no-repeat 2px 2px;
+$light-titlebar: linear-gradient(90deg, #0A246A, #A6CAF0);
+$light-titlebar-unfocused: linear-gradient(90deg, #848284, #B1B1B1);
+
+//----DARK VARIABLES----//
+$dark-appborder: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAASUlEQVQI12O0cvb+z4AGLp48zMBo5ez9PyYhCS7Y3VzH8OrZY4REZkwQAwMDA4OSug4REs8fP0Cx49WzxwyM3Dx8GJYzMDAwAACoQyHf60gV0AAAAABJRU5ErkJggg==') 2 repeat;
+$dark-close-button: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAQ0lEQVQY02O0cvb+z0AAMFo5e//v6p7AwMDAwFBWWoAiCRNnhJmErhCZz4hsHUwCBmAaGNHdhM1q0kwi6CaifYcPAADpzC5Thl7jCwAAAABJRU5ErkJggg==') no-repeat 2px 2px;
+$dark-maximize-button: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAIUlEQVQY02M8cu72fwYCgJFoRWWlBTgVdHVPGOKKCAUBAC99MNY/8DzwAAAAAElFTkSuQmCC') no-repeat 2px 2px;
+$dark-unmaximize-button: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAP0lEQVQY02O0cvb+z8DAwNDVPYEBGygrLWBgJFlRWWkBigKYGOORc7f/4zKBdEXYrEFxEy5FyGLEK8LlJhgAAGkhPQnyh6z6AAAAAElFTkSuQmCC') no-repeat 2px 2px;
+$dark-minimize-button: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAHklEQVQY02O0cvb+z0AAMA5/RV3dE7BKlpUWEK8IAE00FgkS+2HRAAAAAElFTkSuQmCC') no-repeat 2px 2px;
+$dark-titlebar: linear-gradient(90deg, #567089, rgb(141, 164, 187));
+$dark-titlebar-unfocused: linear-gradient(90deg, #262C31, rgb(58, 68, 77));
+
+.theme-light {
+	--appborder: #{$light-appborder};
+	--close-button: #{$light-close-button};
+	--maximize-button: #{$light-maximize-button};
+	--unmaximize-button: #{$light-unmaximize-button};
+	--minimize-button: #{$light-minimize-button};
+	--titlebar: #{$light-titlebar};
+	--titlebar-unfocused: #{$light-titlebar-unfocused};
+}
+
+.theme-dark {
+	--appborder: #{$dark-appborder};
+	--close-button: #{$dark-close-button};
+	--maximize-button: #{$dark-maximize-button};
+	--unmaximize-button: #{$dark-unmaximize-button};
+	--minimize-button: #{$dark-minimize-button};
+	--titlebar: #{$dark-titlebar};
+	--titlebar-unfocused: #{$dark-titlebar-unfocused};
+}
+
+@mixin appborder() {
+	border: 2px solid;
+	border-image: var(--appborder);
+	-webkit-border-image: var(--appborder);
+}
