@@ -1,10 +1,5 @@
 @use 'widgets';
 
-#app-mount {
+body {
 	@include widgets.appborder;
-	margin-top: -26px;
-}
-
-.app-* {
-  margin-top: 22px;
 }

@@ -2,8 +2,8 @@
  * @name Discord98
  * @author dotkwa
  * @description A theme that stylizes Discord like it would be made for Windows 98/2k.
- * @version 1.0.0
+ * @version 0.0.1
  * @source https://github.com/dotkwa/BetterDiscordThings/tree/master/v1/themes/Discord98
  */
 
-@import url('https://github.com/dotkwa/BetterDiscordThings/raw/master/v1/themes/Discord98/output/discord98.css')
+@import "https://github.com/dotkwa/BetterDiscordThings/raw/master/v1/themes/Discord98/output/discord98.css";

@@ -1,4 +1,4 @@
-.theme-light {
+:root:not(.theme-dark) {
   --appborder: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAPElEQVQI12O8f+fafwY00NTazcB4/861/wrKmnDBnp4ehmvXrpErsWb9VhQ7rl27xsCYmJiIYTkDAwMDALltJ9P6Wi0iAAAAAElFTkSuQmCC") 2 repeat;
   --close-button: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAARElEQVQY02O8f+fafwYCgPH+nWv/FVW0GBgYGBju37mGIgkTZ4SZhK4Qmc+IbB1MAgZgGhjR3YTNatJMIugmon2HDwAAhXk7+HSeZCcAAAAASUVORK5CYII=") no-repeat 2px 2px;
   --maximize-button: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAIUlEQVQY02NkYGD4z0AAMBKt6P6dazgVKKpoDXFFhIIAAF+YGwEvkwPlAAAAAElFTkSuQmCC") no-repeat 2px 2px;
@@ -8,7 +8,7 @@
   --titlebar-unfocused: linear-gradient(90deg, #848284, #B1B1B1);
 }
 
-.theme-dark {
+:root:not(.theme-light) {
   --appborder: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAASUlEQVQI12O0cvb+z4AGLp48zMBo5ez9PyYhCS7Y3VzH8OrZY4REZkwQAwMDA4OSug4REs8fP0Cx49WzxwyM3Dx8GJYzMDAwAACoQyHf60gV0AAAAABJRU5ErkJggg==") 2 repeat;
   --close-button: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAQ0lEQVQY02O0cvb+z0AAMFo5e//v6p7AwMDAwFBWWoAiCRNnhJmErhCZz4hsHUwCBmAaGNHdhM1q0kwi6CaifYcPAADpzC5Thl7jCwAAAABJRU5ErkJggg==") no-repeat 2px 2px;
   --maximize-button: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAIUlEQVQY02M8cu72fwYCgJFoRWWlBTgVdHVPGOKKCAUBAC99MNY/8DzwAAAAAElFTkSuQmCC") no-repeat 2px 2px;
@@ -18,13 +18,8 @@
   --titlebar-unfocused: linear-gradient(90deg, #262C31, #3a444d);
 }
 
-#app-mount {
+body {
   border: 2px solid;
   border-image: var(--appborder);
   -webkit-border-image: var(--appborder);
-  margin-top: -26px;
-}
-
-.app-* {
-  margin-top: 22px;
 }
