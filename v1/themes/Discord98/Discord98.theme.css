@@ -801,7 +801,7 @@ div.button-2b6hmh {
 }
 
 /*tooltips*/
-.tooltip {
+.tooltip, .tooltip.tooltip-red, .tooltip.tooltip-brand {
   background-color: var(--tooltip-color)!important;
   border: 1px solid;
   border-color: black;
