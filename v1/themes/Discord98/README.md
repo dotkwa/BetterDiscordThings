@@ -6,7 +6,7 @@ Stylizes Discord into a Windows 98/2k app
 
 Once Sass is installed, run:
 ```
-sass --no-source-map src/main.scss output/discord98.css
+sass --no-source-map src/main.scss Discord98.theme.css
 ```
 
 ## Changelog

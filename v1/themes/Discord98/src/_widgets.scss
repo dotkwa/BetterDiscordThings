@@ -39,5 +39,17 @@ $dark-titlebar-unfocused: linear-gradient(90deg, #262C31, rgb(58, 68, 77));
 @mixin appborder() {
 	border: 2px solid;
 	border-image: var(--appborder);
-	-webkit-border-image: var(--appborder);
+	box-sizing: border-box;
+}
+
+@mixin winicon($buttontype) {
+	background: #{$buttontype};
+	background-size: 9px 9px;
+	background-position: 1px 0;
+}
+
+@mixin button() {
+	&:active {
+		background-position: 2px 1px !important;
+	}
 }

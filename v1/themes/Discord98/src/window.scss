@@ -1,5 +1,41 @@
 @use 'widgets';
 
-body {
+#app-mount {
 	@include widgets.appborder;
+}
+
+.winButton-iRh8-Z {
+	width: 12px;
+	height: 10px;
+	opacity: 1;
+	margin-top: 4px;
+
+  &:active {
+  	background-position: 2px 1px;
+  }
+}
+
+.winButton-iRh8-Z svg {
+	visibility: hidden;
+}
+
+.winButtonClose-1HsbF- {
+	@include widgets.winicon(var(--close-button));
+	margin-left: 2px;
+  	margin-right: 2px;
+}
+
+.winButtonMinMax-PBQ2gm:nth-child(3) {
+	@include widgets.winicon(var(--maximize-button));
+}
+
+.winButtonMinMax-PBQ2gm:nth-child(4) {
+	@include widgets.winicon(var(--minimize-button));
+}
+
+.wordmark-2iDDfm {
+	opacity: 1;
+  	padding: 1px 0 0 20px!important;
+  	background: url(https://discordapp.com/assets/07dca80a102d4149e9736d4b162cff6f.ico) no-repeat 2px 2px;
+  	background-size: 16px 16px;
 }
