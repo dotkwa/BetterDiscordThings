@@ -6,17 +6,24 @@
  * @source https://github.com/dotkwa/BetterDiscordThings/tree/master/v1/themes/Discord98
  */
 :root:not(.theme-dark) {
-  --appborder: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAPElEQVQI12O8f+fafwY00NTazcB4/861/wrKmnDBnp4ehmvXrpErsWb9VhQ7rl27xsCYmJiIYTkDAwMDALltJ9P6Wi0iAAAAAElFTkSuQmCC") 2 repeat;
+  --dialog: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAPElEQVQI12O8f+fafwY00NTazcB4/861/wrKmnDBnp4ehmvXrpErsWb9VhQ7rl27xsCYmJiIYTkDAwMDALltJ9P6Wi0iAAAAAElFTkSuQmCC") 2 repeat;
   --close-button: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAARElEQVQY02O8f+fafwYCgPH+nWv/FVW0GBgYGBju37mGIgkTZ4SZhK4Qmc+IbB1MAgZgGhjR3YTNatJMIugmon2HDwAAhXk7+HSeZCcAAAAASUVORK5CYII=") no-repeat 2px 2px;
   --maximize-button: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAIUlEQVQY02NkYGD4z0AAMBKt6P6dazgVKKpoDXFFhIIAAF+YGwEvkwPlAAAAAElFTkSuQmCC") no-repeat 2px 2px;
   --unmaximize-button: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAP0lEQVQY02O8f+fafwYGBgZFFS0GbOD+nWsMjCQrun/nGooCmBgjAwPDf1wmkK4ImzUobsKlCFmMeEW43AQDACPgOxpaVpZqAAAAAElFTkSuQmCC") no-repeat 2px 2px;
   --minimize-button: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAH0lEQVQY02O8f+fafwYCgHH4K1JU0cIqef/ONeIVAQCQyiYaiDtkvwAAAABJRU5ErkJggg==") no-repeat 2px 2px;
   --titlebar: linear-gradient(90deg, #0A246A, #A6CAF0);
   --titlebar-unfocused: linear-gradient(90deg, #848284, #B1B1B1);
+  --outset: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAR0lEQVQI142NsQmAABDE8psIVo71P8+NIli5ylsJbnJ2itqYMikSts2LqiJs+9i3S87LSnffYRgnACT9CJIej+4mMvMzBzgBDmkw08ilBzYAAAAASUVORK5CYII=") 2 repeat;
+  --inset: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAUUlEQVQI12NMTEz8z4AGUlJSGBgTExP/a2lpwQVFRQQZ4hOSERIlJSUMDAwMDA/uXmdQUNYkIGFvZ81gb2sFN05BWZOB8ejRo/+trKzQ7WcAAMsTHUEIy/SHAAAAAElFTkSuQmCC") 2 repeat;
+  --line: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAIAAAACDbGyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAtSURBVBhXY+zu7maAgZKSEiYIBQQQIRAfGbAAcU9PD4QDBIz///+HMoGAgQEAzVsKYXHvE/QAAAAASUVORK5CYII=") 2 repeat;
+  --tab: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAU0lEQVQY02P8//8/AwMDw38G7ICRgYGBgfE/RBUjNhVJSUn/582bx4hXUU9Pz/+SkhIMk5CtZezp6fl/7do1GirCcBNc0YO717H6f836rQxEKwIA3txRzPPSV3oAAAAASUVORK5CYII=") 3 repeat;
+  --tab-inactive: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAVElEQVQY02P8//8/AwMDw38G7ICRgYGBgfE/RBUjNhVJSUn/582bx4hXUU9Pz/+SkhIMk5CtZezp6fl/7do1GirCcBNc0YO717H6f836rQzIJuEFAHj6SqZoTaqwAAAAAElFTkSuQmCC") 3 repeat;
+  --bg-color: #DFDCD6;
+  --form-color: white;
 }
 
 :root:not(.theme-light) {
-  --appborder: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAASUlEQVQI12O0cvb+z4AGLp48zMBo5ez9PyYhCS7Y3VzH8OrZY4REZkwQAwMDA4OSug4REs8fP0Cx49WzxwyM3Dx8GJYzMDAwAACoQyHf60gV0AAAAABJRU5ErkJggg==") 2 repeat;
+  --dialog: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAASUlEQVQI12O0cvb+z4AGLp48zMBo5ez9PyYhCS7Y3VzH8OrZY4REZkwQAwMDA4OSug4REs8fP0Cx49WzxwyM3Dx8GJYzMDAwAACoQyHf60gV0AAAAABJRU5ErkJggg==") 2 repeat;
   --close-button: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAQ0lEQVQY02O0cvb+z0AAMFo5e//v6p7AwMDAwFBWWoAiCRNnhJmErhCZz4hsHUwCBmAaGNHdhM1q0kwi6CaifYcPAADpzC5Thl7jCwAAAABJRU5ErkJggg==") no-repeat 2px 2px;
   --maximize-button: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAIUlEQVQY02M8cu72fwYCgJFoRWWlBTgVdHVPGOKKCAUBAC99MNY/8DzwAAAAAElFTkSuQmCC") no-repeat 2px 2px;
   --unmaximize-button: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAADXTAAA10wEMIUN3AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAP0lEQVQY02O0cvb+z8DAwNDVPYEBGygrLWBgJFlRWWkBigKYGOORc7f/4zKBdEXYrEFxEy5FyGLEK8LlJhgAAGkhPQnyh6z6AAAAAElFTkSuQmCC") no-repeat 2px 2px;
@@ -26,19 +33,24 @@
 }
 
 #app-mount {
-  border: 2px solid;
-  border-image: var(--appborder);
   box-sizing: border-box;
+  border: 2px solid;
+  border-image: var(--dialog);
 }
 
 .winButton-iRh8-Z {
-  width: 12px;
-  height: 10px;
+  width: 16px;
+  height: 14px;
   opacity: 1;
-  margin-top: 4px;
+  margin-top: 6px;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-image: var(--outset);
+  background-color: var(--bg-color) !important;
 }
 .winButton-iRh8-Z:active {
-  background-position: 2px 1px;
+  border-image: var(--inset);
+  background-position: 2px 1px !important;
 }
 
 .winButton-iRh8-Z svg {
@@ -48,7 +60,7 @@
 .winButtonClose-1HsbF- {
   background: var(--close-button);
   background-size: 9px 9px;
-  background-position: 1px 0;
+  background-position: 1px 0px;
   margin-left: 2px;
   margin-right: 2px;
 }
@@ -56,18 +68,27 @@
 .winButtonMinMax-PBQ2gm:nth-child(3) {
   background: var(--maximize-button);
   background-size: 9px 9px;
-  background-position: 1px 0;
+  background-position: 1px 0px;
 }
 
 .winButtonMinMax-PBQ2gm:nth-child(4) {
   background: var(--minimize-button);
   background-size: 9px 9px;
-  background-position: 1px 0;
+  background-position: 1px 0px;
+}
+
+.withFrame-haYltI {
+  margin-top: 0px;
+}
+
+.typeWindows-1za-n7 {
+  background: var(--titlebar);
+  margin: 1px;
 }
 
 .wordmark-2iDDfm {
-  opacity: 1;
+  color: white;
   padding: 1px 0 0 20px !important;
-  background: url(https://discordapp.com/assets/07dca80a102d4149e9736d4b162cff6f.ico) no-repeat 2px 2px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACLUlEQVR4Ae2W09YdMQCFy9v2AXpb3fYJqjeqbdu2bdu23R7b5m52fmcdjP65OnutPZ6dL8kkmT4dmrjya3/hOcIRYfSSI+1l9O+jiACzhGGTZ9UCCNsIEK4FADvdAtAFsHrfH9x7GcG7b0lcfhDEkh2/sPbAX2w55pBeI46X7f6Nx2+j+OvO8lm+Yx5g3uafeP89CX84Lwv/+ieNbK6MekqmS/L57//SSGfLfIcZxgHefk2gXK5K61WxWOGOGcYAFmz7iUoVZsUMZukHuPk0DKt040lIP0AkXoRFYpY+AH7BtZQvVPDLmZF7ValMGb9dGZRqfy/M1A5w7k4Aqvj1L9r+i/e5l+cdCkYLmLXhh7y37uBflGt8PMzUDMAvVxGHVI8Annfo9rNwj3sufw6qmKkZwBPMQxVrOWX1N97nXp536Icj3fnu7E0/kMtXoIiZ2gHqTTb/PFlceRCUe1Vffqdw9WFQTlo1xEztAN17kMeZbBl6lc2Xe3wLPNIMoNaCzXdL9PNPR6bp5OTwZnHneRh/lVZipmaAeVt+yuGmzmgvP8UxY913uQCduuGT3XHtUQinb/qx85QTc0T/P3kXU4cis5ipHYCeJLz7jEsuLolUSYZuPe5ouszyGT6baF+YmDGp9UOiEaAFkLW4EB8z9QDstxggKTxeOKEVYLDwTYshxgiPEg41BFBARvJFizykPXOYsFMBsFeEEX5nO4ACMUj4uu0ACsRA4T0d5/8BF8kBJfv/LssAAAAASUVORK5CYII=") no-repeat 2px 2px;
   background-size: 16px 16px;
 }

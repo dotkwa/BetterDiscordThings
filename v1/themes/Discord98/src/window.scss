@@ -1,18 +1,15 @@
 @use 'widgets';
 
 #app-mount {
-	@include widgets.appborder;
+	@include widgets.dialog;
 }
 
 .winButton-iRh8-Z {
-	width: 12px;
-	height: 10px;
+	width: 16px;
+	height: 14px;
 	opacity: 1;
-	margin-top: 4px;
-
-  &:active {
-  	background-position: 2px 1px;
-  }
+	margin-top: 6px;
+	@include widgets.bigbutton();
 }
 
 .winButton-iRh8-Z svg {
@@ -33,9 +30,18 @@
 	@include widgets.winicon(var(--minimize-button));
 }
 
+.withFrame-haYltI {
+	margin-top: 0px;
+}
+
+.typeWindows-1za-n7 {
+	background: var(--titlebar);
+	margin: 1px;
+}
+
 .wordmark-2iDDfm {
-	opacity: 1;
+	color: white;
   	padding: 1px 0 0 20px!important;
-  	background: url(https://discordapp.com/assets/07dca80a102d4149e9736d4b162cff6f.ico) no-repeat 2px 2px;
+  	background: widgets.$discord-icon;
   	background-size: 16px 16px;
 }
