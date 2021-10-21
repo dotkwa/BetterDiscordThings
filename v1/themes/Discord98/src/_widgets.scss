@@ -27,6 +27,9 @@ $dark-minimize-button: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAA
 $dark-titlebar: linear-gradient(90deg, #567089, rgb(141, 164, 187));
 $dark-titlebar-unfocused: linear-gradient(90deg, #262C31, rgb(58, 68, 77));
 
+//--OTHER VARIABLES--//
+$winfont: Tahoma, sans-serif;
+
 :root:not(.theme-dark) {
 	--dialog: #{$light-dialog};
 	--close-button: #{$light-close-button};
@@ -73,6 +76,18 @@ $dark-titlebar-unfocused: linear-gradient(90deg, #262C31, rgb(58, 68, 77));
 	background-color: var(--bg-color) !important;
 	&:active {
 		border-image: var(--inset);
+		background-position: 2px 1px !important;
+	}
+}
+
+@mixin taskbarbutton() {
+	box-sizing: border-box;
+	border: 2px solid;
+	border-image: var(--outset);
+	background-color: var(--bg-color) !important;
+	&:active {
+		border-image: var(--inset);
+		background-color: var(--form-color) !important;
 		background-position: 2px 1px !important;
 	}
 }

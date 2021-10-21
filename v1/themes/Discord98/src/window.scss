@@ -4,16 +4,20 @@
 	@include widgets.dialog;
 }
 
+#app-mount, .app-2rEoOp, .bg-h5JY_x, .layer-3QrUeG.baseLayer-35bLyl, .wrapper-3NnKdC {
+	background-color: var(--bg-color);
+}
+
 .winButton-iRh8-Z {
 	width: 16px;
 	height: 14px;
 	opacity: 1;
 	margin-top: 6px;
+	cursor: default;
 	@include widgets.bigbutton();
-}
-
-.winButton-iRh8-Z svg {
-	visibility: hidden;
+	svg {
+		visibility: hidden;
+	}
 }
 
 .winButtonClose-1HsbF- {
@@ -44,4 +48,12 @@
   	padding: 1px 0 0 20px!important;
   	background: widgets.$discord-icon;
   	background-size: 16px 16px;
+  	& svg {
+  		visibility:	hidden;
+  	}
+  	&:before {
+  		position: absolute;
+  		font: bold 11px widgets.$winfont;
+		content: 'Discord'
+  	}
 }
