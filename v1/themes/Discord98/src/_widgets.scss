@@ -12,10 +12,28 @@ $light-titlebar-unfocused: linear-gradient(90deg, #848284, #B1B1B1);
 $light-outset: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAR0lEQVQI142NsQmAABDE8psIVo71P8+NIli5ylsJbnJ2itqYMikSts2LqiJs+9i3S87LSnffYRgnACT9CJIej+4mMvMzBzgBDmkw08ilBzYAAAAASUVORK5CYII=') 2 repeat;
 $light-inset: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAUUlEQVQI12NMTEz8z4AGUlJSGBgTExP/a2lpwQVFRQQZ4hOSERIlJSUMDAwMDA/uXmdQUNYkIGFvZ81gb2sFN05BWZOB8ejRo/+trKzQ7WcAAMsTHUEIy/SHAAAAAElFTkSuQmCC') 2 repeat;
 $light-line: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAIAAAACDbGyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAtSURBVBhXY+zu7maAgZKSEiYIBQQQIRAfGbAAcU9PD4QDBIz///+HMoGAgQEAzVsKYXHvE/QAAAAASUVORK5CYII=') 2 repeat;
+$light-form: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAUUlEQVQI12Ps7u7+z4AGrKysGBi7u7v/X7t2DS5ob2fNEJ+QjJCYN28eAwMDA8ODu9cZFJQ1CUiIiggy2NtawY1TUNZkYDx69Oh/KysrdPsZACEvJkHA6Z/UAAAAAElFTkSuQmCC') 2 repeat;
 $light-tab: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAU0lEQVQY02P8//8/AwMDw38G7ICRgYGBgfE/RBUjNhVJSUn/582bx4hXUU9Pz/+SkhIMk5CtZezp6fl/7do1GirCcBNc0YO717H6f836rQxEKwIA3txRzPPSV3oAAAAASUVORK5CYII=') 3 repeat;
 $light-tab-inactive: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAVElEQVQY02P8//8/AwMDw38G7ICRgYGBgfE/RBUjNhVJSUn/582bx4hXUU9Pz/+SkhIMk5CtZezp6fl/7do1GirCcBNc0YO717H6f836rQzIJuEFAHj6SqZoTaqwAAAAAElFTkSuQmCC') 3 repeat;
 $light-bg-color: #DFDCD6;
 $light-form-color: white;
+$light-dialog-font-color: black;
+$light-highlight-color: #faa61a;
+$light-faded-highlight-color: rgba(250,166,26,.2);
+$light-selected-color: #316AC5;
+$light-selected-font-color: white;
+$light-disabled-color: #C6C6C7;
+$light-disabled-font-color: #808080;
+$light-disabled-font-shadow-color: white;
+$light-scrollup: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAA2SURBVChTY7x/59p/BhIAE5QmGgyQBkUVLSgLE2BogCnGpQlFA7oibJrgGnCZiC4+9OOBgQEAWI8KQN56lugAAAAASUVORK5CYII=');
+$light-scrollup-active: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAA2SURBVChTY7x/59p/BhIAE5QmGgwlDYoqWlAWKsCqAaYYmyYMDeiK0PkoGnA5A1l80EUcAwMACUQKQDGwYH0AAAAASUVORK5CYII=');
+$light-scrollup-inactive: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAABESURBVChTY7x/59p/BhIAE5QmGgyQhjXrt0JZmABDA0wxLk0oGtAVYdME14DLRHRxlHhQUNaEsjDBg7vXwfSgizgGBgDyaRw2ygesfAAAAABJRU5ErkJggg==');
+$light-scrolldown: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABHSURBVChTY7x/59p/BhIAE5QmGtBeA9wPiipaYAFsAKgGykKyAVkQGaCLozgJXRKbIRh+gCnCZSNWT+NSDAIkhxKtNTAwAAD8yBwuYscw7QAAAABJRU5ErkJggg==');
+$light-scrolldown-active: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABGSURBVChTY7x/59p/BhIAE5QmGgxCDSieVlTRgrIwAVAdmEaxASaIDpDFMZyErgmdj9UPMEXYbMTpaWyKQYDkUCJRAwMDAPb7HC5pgyJ+AAAAAElFTkSuQmCC');
+$light-scrolldown-inactive: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABMSURBVChTY7x/59p/BhIAE5QmGtBeA9wPa9ZvBQtgAyGB3lAWkg3IgsigpKQEyoIAFCehawIpfnD3OpQHARh+gGnCphgEhn48MDAAANBaGdIPvbc9AAAAAElFTkSuQmCC');
+$light-scrolltrack-color: #EFEEEB;
+$light-scrollbutton-active-border-color: #8B8B8B;
+$light-tooltip-color: #FFFFE1;
 
 
 //----DARK THEME VARIABLES----//
@@ -41,10 +59,28 @@ $winfont: Tahoma, sans-serif;
 	--outset: #{$light-outset};
 	--inset: #{$light-inset};
 	--line: #{$light-line};
+	--form: #{$light-form};
 	--tab: #{$light-tab};
 	--tab-inactive: #{$light-tab-inactive};
 	--bg-color: #{$light-bg-color};
 	--form-color: #{$light-form-color};
+	--dialog-font-color: #{$light-dialog-font-color};
+	--highlight-color: #{$light-highlight-color};
+	--faded-highlight-color: #{$light-faded-highlight-color};
+	--selected-color: #{$light-selected-color};
+	--selected-font-color: #{$light-selected-font-color};
+	--disabled-color: #{$light-disabled-color};
+	--disabled-font-color: #{$light-disabled-font-color};
+	--disabled-font-shadow-color: #{$light-disabled-font-shadow-color};
+	--scrollup: #{$light-scrollup};
+	--scrollup-active: #{$light-scrollup-active};
+	--scrollup-inactive: #{$light-scrollup-inactive};
+	--scrolldown: #{$light-scrolldown};
+	--scrolldown-active: #{$light-scrolldown-active};
+	--scrolldown-inactive: #{$light-scrolldown-inactive };
+	--scrolltrack-color: #{$light-scrolltrack-color};
+	--scrollbutton-active-border-color: #{$light-scrollbutton-active-border-color};
+	--tooltip: #{$light-tooltip-color};
 }
 
 :root:not(.theme-light) {
@@ -66,13 +102,13 @@ $winfont: Tahoma, sans-serif;
 @mixin winicon($buttontype) {
 	background: #{$buttontype};
 	background-size: 9px 9px;
-	background-position: 1px 0px;
 }
 
-@mixin bigbutton() {
+@mixin button($bordersize) {
 	box-sizing: border-box;
-	border: 2px solid;
+	border: $bordersize solid;
 	border-image: var(--outset);
+	background-position: 1px 0px !important;
 	background-color: var(--bg-color) !important;
 	&:active {
 		border-image: var(--inset);
@@ -90,4 +126,35 @@ $winfont: Tahoma, sans-serif;
 		background-color: var(--form-color) !important;
 		background-position: 2px 1px !important;
 	}
+}
+
+@mixin outset($bordersize) {
+	box-sizing: border-box;
+	border: $bordersize solid;
+	border-image: var(--outset);
+	background-color: var(--bg-color) !important;
+}
+
+@mixin inset($bordersize) {
+	box-sizing: border-box;
+	border: $bordersize solid;
+	border-image: var(--inset);
+	background-color: var(--bg-color) !important;
+}
+
+@mixin vertical-line() {
+	border-bottom: 2px solid;
+	border-image: var(--line);
+}
+
+@mixin horizontal-line() {
+	border-right: 2px solid;
+	border-image: var(--line);
+}
+
+@mixin form() {
+	box-sizing: border-box;
+	border: 2px solid;
+	border-image: var(--form);
+	background-color: var(--form-color) !important;
 }

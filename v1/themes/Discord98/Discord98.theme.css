@@ -2,7 +2,7 @@
  * @name Discord98
  * @author dotkwa
  * @description A theme that stylizes Discord like it would be made for Windows 98/2k.
- * @version 0.0.1
+ * @version 0.0.2
  * @source https://github.com/dotkwa/BetterDiscordThings/tree/master/v1/themes/Discord98
  */
 :root:not(.theme-dark) {
@@ -16,10 +16,28 @@
   --outset: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAR0lEQVQI142NsQmAABDE8psIVo71P8+NIli5ylsJbnJ2itqYMikSts2LqiJs+9i3S87LSnffYRgnACT9CJIej+4mMvMzBzgBDmkw08ilBzYAAAAASUVORK5CYII=") 2 repeat;
   --inset: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAUUlEQVQI12NMTEz8z4AGUlJSGBgTExP/a2lpwQVFRQQZ4hOSERIlJSUMDAwMDA/uXmdQUNYkIGFvZ81gb2sFN05BWZOB8ejRo/+trKzQ7WcAAMsTHUEIy/SHAAAAAElFTkSuQmCC") 2 repeat;
   --line: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAIAAAACDbGyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAtSURBVBhXY+zu7maAgZKSEiYIBQQQIRAfGbAAcU9PD4QDBIz///+HMoGAgQEAzVsKYXHvE/QAAAAASUVORK5CYII=") 2 repeat;
+  --form: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAUUlEQVQI12Ps7u7+z4AGrKysGBi7u7v/X7t2DS5ob2fNEJ+QjJCYN28eAwMDA8ODu9cZFJQ1CUiIiggy2NtawY1TUNZkYDx69Oh/KysrdPsZACEvJkHA6Z/UAAAAAElFTkSuQmCC") 2 repeat;
   --tab: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAU0lEQVQY02P8//8/AwMDw38G7ICRgYGBgfE/RBUjNhVJSUn/582bx4hXUU9Pz/+SkhIMk5CtZezp6fl/7do1GirCcBNc0YO717H6f836rQxEKwIA3txRzPPSV3oAAAAASUVORK5CYII=") 3 repeat;
   --tab-inactive: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAAAVElEQVQY02P8//8/AwMDw38G7ICRgYGBgfE/RBUjNhVJSUn/582bx4hXUU9Pz/+SkhIMk5CtZezp6fl/7do1GirCcBNc0YO717H6f836rQzIJuEFAHj6SqZoTaqwAAAAAElFTkSuQmCC") 3 repeat;
   --bg-color: #DFDCD6;
   --form-color: white;
+  --dialog-font-color: black;
+  --highlight-color: #faa61a;
+  --faded-highlight-color: rgba(250, 166, 26, 0.2);
+  --selected-color: #316AC5;
+  --selected-font-color: white;
+  --disabled-color: #C6C6C7;
+  --disabled-font-color: #808080;
+  --disabled-font-shadow-color: white;
+  --scrollup: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAA2SURBVChTY7x/59p/BhIAE5QmGgyQBkUVLSgLE2BogCnGpQlFA7oibJrgGnCZiC4+9OOBgQEAWI8KQN56lugAAAAASUVORK5CYII=");
+  --scrollup-active: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAA2SURBVChTY7x/59p/BhIAE5QmGgwlDYoqWlAWKsCqAaYYmyYMDeiK0PkoGnA5A1l80EUcAwMACUQKQDGwYH0AAAAASUVORK5CYII=");
+  --scrollup-inactive: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAABESURBVChTY7x/59p/BhIAE5QmGgyQhjXrt0JZmABDA0wxLk0oGtAVYdME14DLRHRxlHhQUNaEsjDBg7vXwfSgizgGBgDyaRw2ygesfAAAAABJRU5ErkJggg==");
+  --scrolldown: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABHSURBVChTY7x/59p/BhIAE5QmGtBeA9wPiipaYAFsAKgGykKyAVkQGaCLozgJXRKbIRh+gCnCZSNWT+NSDAIkhxKtNTAwAAD8yBwuYscw7QAAAABJRU5ErkJggg==");
+  --scrolldown-active: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABGSURBVChTY7x/59p/BhIAE5QmGgxCDSieVlTRgrIwAVAdmEaxASaIDpDFMZyErgmdj9UPMEXYbMTpaWyKQYDkUCJRAwMDAPb7HC5pgyJ+AAAAAElFTkSuQmCC");
+  --scrolldown-inactive: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABMSURBVChTY7x/59p/BhIAE5QmGtBeA9wPa9ZvBQtgAyGB3lAWkg3IgsigpKQEyoIAFCehawIpfnD3OpQHARh+gGnCphgEhn48MDAAANBaGdIPvbc9AAAAAElFTkSuQmCC");
+  --scrolltrack-color: #EFEEEB;
+  --scrollbutton-active-border-color: #8B8B8B;
+  --tooltip: #FFFFE1;
 }
 
 :root:not(.theme-light) {
@@ -51,6 +69,7 @@
   box-sizing: border-box;
   border: 2px solid;
   border-image: var(--outset);
+  background-position: 1px 0px !important;
   background-color: var(--bg-color) !important;
 }
 .winButton-iRh8-Z:active {
@@ -64,7 +83,6 @@
 .winButtonClose-1HsbF- {
   background: var(--close-button);
   background-size: 9px 9px;
-  background-position: 1px 0px;
   margin-left: 2px;
   margin-right: 2px;
 }
@@ -72,13 +90,95 @@
 .winButtonMinMax-PBQ2gm:nth-child(3) {
   background: var(--maximize-button);
   background-size: 9px 9px;
-  background-position: 1px 0px;
 }
 
 .winButtonMinMax-PBQ2gm:nth-child(4) {
   background: var(--minimize-button);
   background-size: 9px 9px;
-  background-position: 1px 0px;
+}
+
+.withFrame-haYltI {
+  margin-top: 0px;
+}
+
+.typeWindows-1za-n7 {
+  background: var(--titlebar);
+  margin: 2px;
+}
+
+.wordmark-2iDDfm {
+  color: white;
+  padding: 1px 0 0 20px !important;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACLUlEQVR4Ae2W09YdMQCFy9v2AXpb3fYJqjeqbdu2bdu23R7b5m52fmcdjP65OnutPZ6dL8kkmT4dmrjya3/hOcIRYfSSI+1l9O+jiACzhGGTZ9UCCNsIEK4FADvdAtAFsHrfH9x7GcG7b0lcfhDEkh2/sPbAX2w55pBeI46X7f6Nx2+j+OvO8lm+Yx5g3uafeP89CX84Lwv/+ieNbK6MekqmS/L57//SSGfLfIcZxgHefk2gXK5K61WxWOGOGcYAFmz7iUoVZsUMZukHuPk0DKt040lIP0AkXoRFYpY+AH7BtZQvVPDLmZF7ValMGb9dGZRqfy/M1A5w7k4Aqvj1L9r+i/e5l+cdCkYLmLXhh7y37uBflGt8PMzUDMAvVxGHVI8Annfo9rNwj3sufw6qmKkZwBPMQxVrOWX1N97nXp536Icj3fnu7E0/kMtXoIiZ2gHqTTb/PFlceRCUe1Vffqdw9WFQTlo1xEztAN17kMeZbBl6lc2Xe3wLPNIMoNaCzXdL9PNPR6bp5OTwZnHneRh/lVZipmaAeVt+yuGmzmgvP8UxY913uQCduuGT3XHtUQinb/qx85QTc0T/P3kXU4cis5ipHYCeJLz7jEsuLolUSYZuPe5ouszyGT6baF+YmDGp9UOiEaAFkLW4EB8z9QDstxggKTxeOKEVYLDwTYshxgiPEg41BFBARvJFizykPXOYsFMBsFeEEX5nO4ACMUj4uu0ACsRA4T0d5/8BF8kBJfv/LssAAAAASUVORK5CYII=") no-repeat 2px 2px;
+  background-size: 16px 16px;
+  top: 2px;
+  left: 1px;
+}
+.wordmark-2iDDfm svg {
+  visibility: hidden;
+}
+.wordmark-2iDDfm:before {
+  position: absolute;
+  top: 2px;
+  font: bold 11px Tahoma, sans-serif;
+  content: "Discord";
+}
+
+.container-1r6BKw {
+  height: 34px;
+  padding: 0;
+}
+.container-1r6BKw.themed-ANHk51 {
+  background-color: var(--bg-color);
+}
+
+.iconWrapper-2OrFZ1 {
+  height: auto;
+  max-height: 34px;
+}
+
+.clickable-3rdHwn {
+  margin: 1px !important;
+  padding: 4px;
+}
+.clickable-3rdHwn:hover {
+  box-sizing: border-box;
+  border: 1px solid;
+  border-image: var(--outset);
+  background-position: 1px 0px !important;
+  background-color: var(--bg-color) !important;
+  margin: 0 !important;
+}
+.clickable-3rdHwn:hover:active {
+  border-image: var(--inset);
+  background-position: 2px 1px !important;
+}
+.clickable-3rdHwn:hover:active .icon-22AiRD {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+.clickable-3rdHwn .icon-22AiRD {
+  color: var(--dialog-font-color);
+}
+
+.selected-1GqIat {
+  box-sizing: border-box;
+  border: 1px solid;
+  border-image: var(--inset);
+  background-color: var(--bg-color) !important;
+  margin: 0 !important;
+}
+.selected-1GqIat:hover {
+  box-sizing: border-box;
+  border: 1px solid;
+  border-image: var(--inset);
+  background-color: var(--bg-color) !important;
+}
+
+.iconBadge-qZ4Ksk {
+  right: 6px;
+  bottom: 8px;
 }
 
 .toolbar-1t6TWx a {
@@ -88,31 +188,27 @@
   position: absolute;
   z-index: 3002;
   */
+  cursor: default;
 }
 .toolbar-1t6TWx a .clickable-3rdHwn {
   cursor: help;
 }
 
-.withFrame-haYltI {
-  margin-top: 0px;
+.children-19S4PO:after, .divider-3FBTu8 {
+  background: none !important;
+  border-right: 2px solid;
+  border-image: var(--line);
+  margin: 0;
 }
 
-.typeWindows-1za-n7 {
-  background: var(--titlebar);
-  margin: 1px;
+.inviteToolbar-3F-l2g .divider-3FBTu8 {
+  display: none;
 }
 
-.wordmark-2iDDfm {
-  color: white;
-  padding: 1px 0 0 20px !important;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACLUlEQVR4Ae2W09YdMQCFy9v2AXpb3fYJqjeqbdu2bdu23R7b5m52fmcdjP65OnutPZ6dL8kkmT4dmrjya3/hOcIRYfSSI+1l9O+jiACzhGGTZ9UCCNsIEK4FADvdAtAFsHrfH9x7GcG7b0lcfhDEkh2/sPbAX2w55pBeI46X7f6Nx2+j+OvO8lm+Yx5g3uafeP89CX84Lwv/+ieNbK6MekqmS/L57//SSGfLfIcZxgHefk2gXK5K61WxWOGOGcYAFmz7iUoVZsUMZukHuPk0DKt040lIP0AkXoRFYpY+AH7BtZQvVPDLmZF7ValMGb9dGZRqfy/M1A5w7k4Aqvj1L9r+i/e5l+cdCkYLmLXhh7y37uBflGt8PMzUDMAvVxGHVI8Annfo9rNwj3sufw6qmKkZwBPMQxVrOWX1N97nXp536Icj3fnu7E0/kMtXoIiZ2gHqTTb/PFlceRCUe1Vffqdw9WFQTlo1xEztAN17kMeZbBl6lc2Xe3wLPNIMoNaCzXdL9PNPR6bp5OTwZnHneRh/lVZipmaAeVt+yuGmzmgvP8UxY913uQCduuGT3XHtUQinb/qx85QTc0T/P3kXU4cis5ipHYCeJLz7jEsuLolUSYZuPe5ouszyGT6baF+YmDGp9UOiEaAFkLW4EB8z9QDstxggKTxeOKEVYLDwTYshxgiPEg41BFBARvJFizykPXOYsFMBsFeEEX5nO4ACMUj4uu0ACsRA4T0d5/8BF8kBJfv/LssAAAAASUVORK5CYII=") no-repeat 2px 2px;
-  background-size: 16px 16px;
-}
-.wordmark-2iDDfm svg {
-  visibility: hidden;
-}
-.wordmark-2iDDfm:before {
-  position: absolute;
-  font: bold 11px Tahoma, sans-serif;
-  content: "Discord";
+.searchBar-3dMhjb {
+  box-sizing: border-box;
+  border: 2px solid;
+  border-image: var(--form);
+  background-color: var(--form-color) !important;
+  border-radius: 0;
 }

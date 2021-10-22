@@ -14,7 +14,7 @@
 	opacity: 1;
 	margin-top: 6px;
 	cursor: default;
-	@include widgets.bigbutton();
+	@include widgets.button(2px);
 	svg {
 		visibility: hidden;
 	}
@@ -40,7 +40,7 @@
 
 .typeWindows-1za-n7 {
 	background: var(--titlebar);
-	margin: 1px;
+	margin: 2px;
 }
 
 .wordmark-2iDDfm {
@@ -48,11 +48,14 @@
   	padding: 1px 0 0 20px!important;
   	background: widgets.$discord-icon;
   	background-size: 16px 16px;
+  	top: 2px;
+  	left: 1px;
   	& svg {
   		visibility:	hidden;
   	}
   	&:before {
   		position: absolute;
+  		top: 2px;
   		font: bold 11px widgets.$winfont;
 		content: 'Discord'
   	}
