@@ -158,3 +158,17 @@ $winfont: Tahoma, sans-serif;
 	border-image: var(--form);
 	background-color: var(--form-color) !important;
 }
+
+@mixin tab() {
+	box-sizing: border-box;
+	border: 3px solid;
+	border-image: var(--tab);
+	background-color: var(--bg-color) !important;
+}
+
+@mixin inactive-tab() {
+	box-sizing: border-box;
+	border: 3px solid;
+	border-image: var(--tab-inactive);
+	background-color: var(--bg-color) !important;
+}
