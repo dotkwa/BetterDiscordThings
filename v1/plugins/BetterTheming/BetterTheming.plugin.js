@@ -1,52 +1,68 @@
-//META{"name":"BetterTheming"}*//
-var BetterTheming = function() {};
-var themeInterval;
+/**
+ * @name BetterTheming
+ * @author dotkwa
+ * @description Adds extra classes to the app-mount node to increase theming capabilities.
+ * @version 0.0.1
+ * @source https://github.com/dotkwa/BetterDiscordThings/tree/master/v1/plugins/BetterTheming
+ * @updateUrl https://github.com/dotkwa/BetterDiscordThings/blob/master/v1/plugins/BetterTheming/BetterTheming.plugin.js
+ */
 
-BetterTheming.prototype.load = function() {};
-BetterTheming.prototype.unload = function() {};
-BetterTheming.prototype.start = function() {
-  themeInterval = setInterval(addClass, 100);
-};
-BetterTheming.prototype.stop = function() {
-  clearInterval(themeInterval);
-  document.querySelector("#app-mount").classList.remove("windowed", "minimized", "maximized", "theme-dark", "theme-light", "focused", "unfocused");
-};
-BetterTheming.prototype.update = function() {};
-BetterTheming.prototype.getName = function() { return "BetterTheming" };
-BetterTheming.prototype.getDescription = function() { return "Adds certain classes to app-mount while in specific environments to increase theming capabilities." };
-BetterTheming.prototype.getVersion = function() { return "1.0.0" };
-BetterTheming.prototype.getAuthor = function() { return "dotkwa" };
+var winTimeout;
+//const root = document.getElementsByTagName('html')[0].classList;
+const appmount = document.querySelector("#app-mount").classList;
 
-addClass = function() {
-  //Check for theme-light or theme-dark in .app
-  if (document.querySelector(".app").classList.contains("theme-light") && !document.querySelector("#app-mount").classList.contains("theme-light")) {
-    document.querySelector("#app-mount").classList.remove("theme-dark");
-    document.querySelector("#app-mount").classList.add("theme-light");
-  } else if (document.querySelector(".app").classList.contains("theme-dark") && !document.querySelector("#app-mount").classList.contains("theme-dark")) {
-    document.querySelector("#app-mount").classList.remove("theme-light");
-    document.querySelector("#app-mount").classList.add("theme-dark");
-  }
-
-  //Check if the window is maximized, minimized, or windowed
-  if (document.visibilityState == "visible") {
-    if (window.outerWidth < screen.availWidth || window.outerHeight < screen.availHeight && !document.querySelector("#app-mount").classList.contains("windowed")) {
-      document.querySelector("#app-mount").classList.remove("maximized", "minimized");
-      document.querySelector("#app-mount").classList.add("windowed");
-    } else if (window.outerWidth == screen.availWidth && window.outerHeight == screen.availHeight && !document.querySelector("#app-mount").classList.contains("maximized")) {
-      document.querySelector("#app-mount").classList.remove("windowed", "minimized");
-      document.querySelector("#app-mount").classList.add("maximized");
+function addWinClass(append) {
+    if (!appmount.contains(append)) {
+        appmount.add(append);
     }
-  } else if (document.visibilityState == "hidden" && !document.querySelector("#app-mount").classList.contains("minimized")) {
-    document.querySelector("#app-mount").classList.remove("maximized", "windowed");
-    document.querySelector("#app-mount").classList.add("minimized");
-  }
+}
 
-  //Check if the window has focus
-  if (document.hasFocus() && !document.querySelector("#app-mount").classList.contains("focused")) {
-    document.querySelector("#app-mount").classList.remove("unfocused");
-    document.querySelector("#app-mount").classList.add("focused");
-  } else if (!document.hasFocus() && !document.querySelector("#app-mount").classList.contains("unfocused")) {
-    document.querySelector("#app-mount").classList.remove("focused");
-    document.querySelector("#app-mount").classList.add("unfocused");
-  }
+function replaceWinClass(append, remove) {
+    if (Array.isArray(remove)) {
+        remove.forEach(element => appmount.remove(element));
+    } else {
+        appmount.remove(remove);
+    }
+    if (!appmount.contains(append)) {
+        appmount.add(append);
+    }
+}
+
+function removeWinClass(remove) {
+    remove.forEach(element => appmount.remove(element));
+}
+
+function updateClasses() {
+    if (document.visibilityState == "visible") {
+        if (window.outerWidth < screen.availWidth || window.outerHeight < screen.availHeight) {
+            replaceWinClass("windowed", ["maximized", "minimized"]);
+        } else if (window.outerWidth == screen.availWidth && window.outerHeight == screen.availHeight) {
+            replaceWinClass("maximized", ["windowed", "minimized"]);
+        }
+    } else {
+        replaceWinClass("minimized", ["maximized", "windowed"]);
+    }
+    if (document.hasFocus()) {
+        replaceWinClass("focused", "unfocused");
+    } else {
+        replaceWinClass("unfocused", "focused");
+    }
+}
+
+module.exports = class BetterTheming {
+    load() {
+    }
+    start() {
+        window.onresize = function() {
+            clearTimeout(winTimeout);
+            winTimeout = setTimeout(updateClasses, 100);
+        }
+        window.onfocus = updateClasses;
+        window.onblur = updateClasses;
+        updateClasses();
+    }
+    stop() {
+        clearTimeout(winTimeout);
+        removeWinClass(["windowed", "maximized", "minimized", "focused", "unfocused"]);
+    }
 }

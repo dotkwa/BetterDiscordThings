@@ -1,8 +1,8 @@
 # BetterTheming  
-Adds certain classes to app-mount while in specific environments to increase theming capabilities.
+Adds extra classes to the app-mount node to increase theming capabilities.
 
-
-To make use BetterTheming as a theme developer, all you need to do is to call the extra classes provided for you in your theme as ':not' conditions on the #app-mount element.
+## Usage
+Call on the classes via CSS conditionals.
 ```css
 #app-mount:not(.maximized) .winButtonMinMax-PBQ2gm:nth-child(3) {
   background: var(--maximize-button);
@@ -16,5 +16,15 @@ To make use BetterTheming as a theme developer, all you need to do is to call th
   background-position: 1px 0;
 }
 ``` 
-This example from the Discord98 theme shows the maximize button switching to a different image when the window is either '.maximized' or '.windowed'.  
 ![Example Image](https://github.com/dotkwa/BetterDiscordThings/raw/master/v1/plugins/BetterTheming/example.png "Example Image")
+
+## Class List
+* windowed --the app is in a floating window
+* maximized --the app is maximized to the screen
+* minimized --the app is minimized to the taskbar
+* focused --the app has mouse focus
+* unfocused --the app doesn't have mouse focus
+
+## Changelog
+* 0.0.1
+  * Script rewrite, updated to work.
