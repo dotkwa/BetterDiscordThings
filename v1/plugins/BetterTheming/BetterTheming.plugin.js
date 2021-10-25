@@ -49,16 +49,18 @@ function updateClasses() {
     }
 }
 
+function updateTimeout() {
+    clearTimeout(winTimeout);
+    winTimeout = setTimeout(updateClasses, 100);
+}
+
 module.exports = class BetterTheming {
     load() {
     }
     start() {
-        window.onresize = function() {
-            clearTimeout(winTimeout);
-            winTimeout = setTimeout(updateClasses, 100);
-        }
-        window.onfocus = updateClasses;
-        window.onblur = updateClasses;
+        window.onresize = updateTimeout;
+        window.onfocus = updateTimeout;
+        window.onblur = updateTimeout;
         updateClasses();
     }
     stop() {
