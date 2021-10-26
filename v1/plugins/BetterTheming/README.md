@@ -1,4 +1,4 @@
-# BetterTheming  
+# BetterTheming - [Download](https://github.com/dotkwa/BetterDiscordThings/raw/master/v1/plugins/BetterTheming/BetterTheming.plugin.js)
 Adds extra classes to the app-mount node to increase theming capabilities.
 
 ## Usage

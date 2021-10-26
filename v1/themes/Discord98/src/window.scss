@@ -1,9 +1,5 @@
 @use 'widgets';
 
-#app-mount {
-	@include widgets.dialog;
-}
-
 #app-mount, .app-2rEoOp, .bg-h5JY_x, .layer-3QrUeG.baseLayer-35bLyl, .wrapper-3NnKdC {
 	background-color: var(--bg-color);
 }
@@ -14,49 +10,74 @@
 	opacity: 1;
 	margin-top: 6px;
 	cursor: default;
-	@include widgets.button(2px);
+	@include widgets.button(big);
 	svg {
 		visibility: hidden;
 	}
 }
 
 .winButtonClose-1HsbF- {
-	@include widgets.winicon(var(--close-button));
+	@include widgets.button-icon(close, 12px, 10px);
 	margin-left: 2px;
   	margin-right: 2px;
 }
 
-.winButtonMinMax-PBQ2gm:nth-child(3) {
-	@include widgets.winicon(var(--maximize-button));
-}
-
 .winButtonMinMax-PBQ2gm:nth-child(4) {
-	@include widgets.winicon(var(--minimize-button));
+	@include widgets.button-icon(minimize, 12px, 10px);
 }
 
 .withFrame-haYltI {
 	margin-top: 0px;
 }
 
-.typeWindows-1za-n7 {
-	background: var(--titlebar);
-	margin: 2px;
+#app-mount {
+	&:not(.maximized) {
+		@include widgets.border(dialog);
+		.typeWindows-1za-n7 {
+			margin: 2px;
+		}
+		.wordmark-2iDDfm {
+			top: 2px;
+  			left: 1px;
+		}
+		.winButtonMinMax-PBQ2gm:nth-child(3) {
+			@include widgets.button-icon(maximize, 12px, 10px);
+		}
+	}
+	&:not(.windowed) {
+		.winButtonMinMax-PBQ2gm:nth-child(3) {
+			@include widgets.button-icon(unmaximize, 12px, 10px);
+		}
+	}
+	&:not(.unfocused) {
+		.typeWindows-1za-n7 {
+			background: var(--titlebar);
+		}
+		.wordmark-2iDDfm {
+			color: white;
+		}
+	}
+	&:not(.focused) {
+		.typeWindows-1za-n7 {
+			background: var(--titlebar-unfocused);
+		}
+		.wordmark-2iDDfm {
+			color: var(--bg-color);
+		}
+	}
 }
 
 .wordmark-2iDDfm {
-	color: white;
   	padding: 1px 0 0 20px!important;
   	background: widgets.$discord-icon;
   	background-size: 16px 16px;
-  	top: 2px;
-  	left: 1px;
   	& svg {
   		visibility:	hidden;
   	}
   	&:before {
   		position: absolute;
-  		top: 2px;
-  		font: bold 11px widgets.$winfont;
+  		top: 3px;
+  		@include widgets.winfont(true, 11px);
 		content: 'Discord'
   	}
 }

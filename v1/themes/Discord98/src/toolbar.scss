@@ -14,16 +14,12 @@
 }
 
 .clickable-3rdHwn {
-	margin: 1px !important;
-	padding: 4px;
+	margin: 2px !important;
+	padding: 3px;
 	&:hover {
-		@include widgets.button(1px);
+		@include widgets.button(small);
+		@include widgets.button-icon();
 		margin: 0 !important;
-		&:active .icon-22AiRD {
-			position: relative;
-			top: 1px;
-			left: 1px;
-		}
 	}
 
 	.icon-22AiRD {
@@ -32,11 +28,8 @@
 }
 
 .selected-1GqIat {
-	@include widgets.inset(1px);
 	margin: 0 !important;
-	&:hover {
-		@include widgets.inset(1px);
-	}
+	@include widgets.enabled-button(small);
 }
 
 .iconBadge-qZ4Ksk {
@@ -45,12 +38,6 @@
 }
 
 .toolbar-1t6TWx a {
-	/*
-	top: -20px;
-	right: 50px;
-	position: absolute;
-	z-index: 3002;
-	*/
 	cursor: default;
 	.clickable-3rdHwn { 
 		cursor: help;
@@ -60,7 +47,7 @@
 /* DIVIDERS */
 .children-19S4PO:after, .divider-3FBTu8 {
 	background: none !important;
-	@include widgets.horizontal-line();
+	@include widgets.h-separator();
 	margin: 0;
 }
 
@@ -76,7 +63,7 @@ section:not(.title-3qD0b-) .children-19S4PO:after {
 
 /* SEARCH BAR */
 .searchBar-3dMhjb {
-	@include widgets.form();
+	@include widgets.border(form);
 	border-radius: 0;
 }
 

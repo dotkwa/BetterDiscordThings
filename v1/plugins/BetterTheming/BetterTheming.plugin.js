@@ -11,36 +11,35 @@ var winTimeout;
 //const root = document.getElementsByTagName('html')[0].classList;
 const appmount = document.querySelector("#app-mount").classList;
 
+function replaceWinClass(append, remove) {
+    removeWinClass(remove);
+    addWinClass(append);
+}
+
 function addWinClass(append) {
     if (!appmount.contains(append)) {
         appmount.add(append);
     }
 }
 
-function replaceWinClass(append, remove) {
+function removeWinClass(remove) {
     if (Array.isArray(remove)) {
         remove.forEach(element => appmount.remove(element));
     } else {
         appmount.remove(remove);
     }
-    if (!appmount.contains(append)) {
-        appmount.add(append);
-    }
-}
-
-function removeWinClass(remove) {
-    remove.forEach(element => appmount.remove(element));
 }
 
 function updateClasses() {
     if (document.visibilityState == "visible") {
-        if (window.outerWidth < screen.availWidth || window.outerHeight < screen.availHeight) {
-            replaceWinClass("windowed", ["maximized", "minimized"]);
-        } else if (window.outerWidth == screen.availWidth && window.outerHeight == screen.availHeight) {
+        removeWinClass("minimized");
+        if (screen.availWidth - window.outerWidth === 0 && screen.availHeight - window.outerHeight === 0) {
             replaceWinClass("maximized", ["windowed", "minimized"]);
+        } else {
+            replaceWinClass("windowed", ["maximized", "minimized"]);
         }
     } else {
-        replaceWinClass("minimized", ["maximized", "windowed"]);
+        addWinClass("minimized");
     }
     if (document.hasFocus()) {
         replaceWinClass("focused", "unfocused");
